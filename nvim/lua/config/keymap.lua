@@ -13,3 +13,8 @@ vim.keymap.set("n", "<leader>e", function()
         vim.cmd("Ex")
     end
 end, { desc = "Toggle netrw" })
+
+-- line number setting
+vim.keymap.set("n", "<leader>m", function()
+    vim.opt.relativenumber = not vim.opt.relativenumber:get()
+end, { desc = "Toggle relative line numbers" })
